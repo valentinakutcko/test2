@@ -1,9 +1,10 @@
 <template>
-    <lightning-card class ="slds-var-p-around_small" title="Account" icon-name="custom:custom65">
-        <lightning-record-edit-form record-id ={recordId} object-api-name="cOrder__c">
-            <lightning-input-field field-name="Account__c">
+    <lightning-card class ="slds-p-around_small" title="Account" icon-name="custom:custom65">
+        <lightning-record-edit-form record-id ={recordId} object-api-name="cOrder">
+            <lightning-input-field field-name="Accont">
                 <lightning-button
-                                 class="slds-var-m-top_small"
+                                 class="slds-m-top_small"
+                                 placeholder="-Select-"
                                  variant="brand"
                                  type="submit"
                                  name="Account"
