@@ -1,7 +1,7 @@
 // recordViewGetRecord.js
 import { LightningElement, track, wire} from 'lwc';
 import {getPicklistValues} from 'lightning/uiObjectInfoApi';
-import ACCOUNT_NAME_FIELD from '@salesforce/schema/Account.Name';
+import ACCOUNT_SOURCE from '@salesforce/schema/Account.AccountSource';
 
 
 
@@ -11,8 +11,8 @@ export default class picklistAccount extends LightningElement {
     @track values;
 
     @wire(getPicklistValues, { 
-        recordTypeId: '0015j000002z8yNAAQ', 
-        fieldApiName: ACCOUNT_NAME_FIELD 
+        recordTypeId: '012000000000000AAA', 
+        fieldApiName: ACCOUNT_SOURCE 
     })
     wiredPicklistValue({data, error}) {
         if(data){

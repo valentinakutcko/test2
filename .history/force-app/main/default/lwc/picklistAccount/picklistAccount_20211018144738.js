@@ -11,7 +11,7 @@ export default class picklistAccount extends LightningElement {
     @track values;
 
     @wire(getPicklistValues, { 
-        recordTypeId: '0015j000002z8yNAAQ', 
+        recordTypeId: '012000000000000AAA', 
         fieldApiName: ACCOUNT_NAME_FIELD 
     })
     wiredPicklistValue({data, error}) {
